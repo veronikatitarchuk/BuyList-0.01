@@ -1,0 +1,163 @@
+body {
+    background-color: #cdcbcb;
+}
+
+
+
+/*BLOCKS*/
+.bl-background {
+    padding-top: 100px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bl-list, .bl-bought {
+    background: white;
+    position: absolute;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.bl-list {
+    border-radius: 5px;
+    width: 50%;
+    left: 14.5%;
+}
+
+.bl-bought {
+    height: 250px; 
+    width: 20%;
+    right: 14.5%;
+}
+
+
+
+/*SEARCH ROW*/
+.bl-search {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 65px;
+}
+
+input, .bl-add {
+    width:	80%;
+    float:	left;
+    padding: 10px;
+    box-sizing:	border-box;
+}
+
+input {
+    margin-top: 14px;
+    height: 60%;
+    border-color: #cdcbcb;
+    border-radius: .2307em 0 0 .2307em;
+    border-right: 0;
+}
+.bl-add {
+    margin-top: 14px;
+    background-color: #2185D0;
+    border-color: #2185D0;
+    height: 60%;
+    width: 20%;
+    font-weight: 700;
+    border-radius: 0 .2307em .2307em 0;
+    color: white;
+}
+
+.bl-add:hover {
+    background: #1270B4;
+}
+
+
+
+/*PRODUCT ROW*/
+.bl-row {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Name of the product*/
+.bl-product {
+    width: auto;
+    max-width: 600px;
+    min-width: 300px;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+/*Count buttons*/
+.bl-count {
+    display: inline-block;
+    position: absolute;
+    left: 37%;
+    bottom: 10px;
+    text-align: center;
+}
+
+.bl-plus, .bl-minus {
+    background: #21BA45;
+    border-radius: 4em;
+    border-color: #21BA45;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: .71428571rem;
+}
+
+.bl-label {
+    background: #cdcbcb;
+    padding: .5833em .833em;
+    display: inline-block;
+    border-radius: .28571429rem;
+}
+.bl-minus {
+    background: #DB2828;
+    border-color: #F9966B;
+}
+
+.bl-plus:hover {
+    background: #10A232;
+}
+
+.bl-minus:hover, .bl-delete:hover {
+    background: #F82020;
+}
+
+/*Buy, delete buttons*/
+.bl-delete {
+    background: #DB2828;
+    border-color: #DB2828;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.bl-buy {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border-color: azure;
+    position: absolute;
+    bottom: 1rem;
+    right: 50px;
+}
+
+.bl-buy:hover {
+    background: #D1D1D1;
+}
+
+
+
+/*BOUGHT BLOCK*/
+.bl-title1, .bl-rowB{
+    position: absolute;
+    height:25%;
+}
