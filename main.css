@@ -1,5 +1,5 @@
 body {
-    background-color: #cdcbcb;
+    background-color: #DADADA;
 }
 
 
@@ -26,8 +26,7 @@ body {
     left: 14.5%;
 }
 
-.bl-bought {
-    height: 250px; 
+.bl-bought { 
     width: 20%;
     right: 14.5%;
 }
@@ -157,7 +156,49 @@ input {
 
 
 /*BOUGHT BLOCK*/
-.bl-title1, .bl-rowB{
-    position: absolute;
-    height:25%;
+
+.bl-title-1, .bl-title-2 {
+    width:100%;
+    height:65px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 1.28rem;
+    font-weight: 700;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.bl-rowB-left {
+    left: 20px;
+    right: 20px;
+    margin:15px;
+    margin-left:20px;
+    margin-right:20px;
+    min-height: 50px;
+}
+
+.bl-rowB-bought {
+    min-height: 50px;
+}
+
+.bl-bought-pr {
+    background-color: #DADADA;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    color: rgba(0,0,0,.6);
+}
+
+.bl-bought-count {
+    display: inline-block;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+    background-color: #F2711C;
+    color:white;
 }
