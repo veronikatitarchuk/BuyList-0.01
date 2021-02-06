@@ -65,16 +65,16 @@ function addToList(tovarName, number = 1) {
 
     let minus = newRow.querySelector('.bl-minus')
     let plus = newRow.querySelector('.bl-plus')
-    let boughtLeftProd = Array.from(document.getElementsByClassName('bl-bought-pr')).filter(value => value.getAttribute('data-id') == currentId)[0]
-    let boughtLeftCount = boughtLeftProd.querySelector('.bl-bought-count')
-    let countEl = newRow.querySelector('.bl-label')
     let prodName = newRow.querySelector('.bl-product')
     let buttonsBD = newRow.querySelector('.bl-buttons')
-    let buttonsPM = newRow.querySelector('.bl-count')
     let buttonNotBuy = newRow.querySelector('.bl-new-buy')
+    let countEl = newRow.querySelector('.bl-label')
+
     buttonNotBuy.hidden = true
 
     minus.addEventListener('click', () => {
+        let boughtLeftCount = document.querySelector(`.bl-bought-pr[data-id="${currentId}"] > .bl-bought-count`)
+
         let count = Number(countEl.textContent)
         if (count === 1) return
         count--
@@ -85,6 +85,8 @@ function addToList(tovarName, number = 1) {
     })
 
     plus.addEventListener('click', () => {
+        let boughtLeftCount = document.querySelector(`.bl-bought-pr[data-id="${currentId}"] > .bl-bought-count`)
+
         let count = Number(countEl.textContent)
         if (count === 1) toggleHide(minus)
         count++
@@ -131,6 +133,8 @@ function addToList(tovarName, number = 1) {
     })
 
     newRow.querySelector('.bl-delete').addEventListener('click', () => {
+        let boughtLeftProd = document.querySelector(`.bl-bought-pr[data-id="${currentId}"]`)
+
         newRow.remove()
         boughtLeftProd.remove()
     })
