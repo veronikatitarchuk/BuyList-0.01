@@ -4,74 +4,21 @@
     <meta charset="UTF-8">
     <title>My Page</title>
 
-
     <link rel="stylesheet" type="text/css" href="main.css" />
+
 </head>
 <body>
     <div class="bl-background">
         <div class="bl-list">
             <div class="bl-search">
-                <input type="text" placeholder="Назва товару">
-                <button class="bl-add" data-tooltip="Додати до кошику">Додати</button>
-            </div>
-            <div class="bl-row">
-                <span class="bl-product">
-                    Помідори
-                </span>
-                <span class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшити кількість">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-tooltip="Збільшити кількість">+</button>
-                </span>
-                <span class="bl-buttons">
-                <button class="bl-buy" data-tooltip="Якщо товар вже куплено">Куплено</button>
-                    <button class="bl-delete" data-tooltip="Видалити товар з кошика">x</button>
-                </span>
-            </div>
-            <div class="bl-row">
-                <span class="bl-product">
-                    Печиво
-                </span>
-                <span class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшити кількість">-</button>
-                    <div class="bl-label">3</div>
-                <button class="bl-plus" data-tooltip="Збільшити кількість">+</button>
-                </span>
-                <span class="bl-buttons">
-                    <button class="bl-buy" data-tooltip="Якщо товар вже куплено">Куплено</button>
-                    <button class="bl-delete" data-tooltip="Видалити товар з кошика">x</button>
-                </span>
-            </div>
-            <div class="bl-row">
-                <span class="bl-product">
-                    Сир
-                </span>
-                <span class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшити кількість">-</button>
-                    <span class="bl-label">3</span>
-                    <button class="bl-plus" data-tooltip="Збільшити кількість">+</button>
-                </span>
-                <span class="bl-buttons">
-                    <button class="bl-buy" data-tooltip="Якщо товар вже куплено">Куплено</button>
-                    <button class="bl-delete" data-tooltip="Видалити товар з кошика">x</button>
-                </span>
+                <label for="tovarInput"></label>
+                <input id="tovarInput" type="text" placeholder="Назва товару">
+                <button id="addTovar" class="bl-add" data-tooltip="Додати до кошику">Додати</button>
             </div>
         </div>
         <div class="bl-bought">
             <div class="bl-title-1">Залишилося</div>
             <div class="bl-rowB-left">
-                <div class="bl-bought-pr"> 
-                    Помідори
-                    <div class="bl-bought-count">3</div>
-                </div>
-                <div class="bl-bought-pr"> 
-                    Печиво
-                    <div class="bl-bought-count">3</div>
-                </div>
-                <div class="bl-bought-pr"> 
-                    Сир
-                    <div class="bl-bought-count">3</div>
-                </div>
             </div>
             <div class="bl-title-2">Куплено</div>
             <div class="bl-rowB-bought">
@@ -91,5 +38,7 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="main.js"> </script>
 </body>
 </html>
